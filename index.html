@@ -20,6 +20,29 @@
       font-family: "Sora", serif;
     }
   </style>
+  <style>
+    @keyframes animation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .gradient {
+      background: linear-gradient(270deg, green, #ff7e5f, #feb47b, red, #86a8e7, #91e8e1, green);
+      background-size: 200%;
+      background-clip: text;
+      color: transparent;
+      animation: animation 3s ease infinite;
+    }
+  </style>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -66,7 +89,8 @@
         <!-- hero content -->
         <div class="flex text-center justify-center mb-4">
           <div>
-            <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold mb-5">Freshness <span class="text-green-600">You Can
+            <h1 class="text-2xl md:text-5xl lg:text-6xl font-bold mb-5 gradient">Freshness <span
+                class="text-green-600">You Can
                 <br>
                 Count</span> On, Prices You’ll Love!</h1>
             <p class="text-sm md:text-base text-gray-500">Shop your daily essentials at unbeatable prices. From fresh
